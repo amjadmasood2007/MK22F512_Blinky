@@ -97,37 +97,37 @@ int main(void)
   Green_SetVal();
 
   /* For example: for(;;) { } */
-  while(1)
-    {
-      count = 0;
-      *DWT_CYCCNT1 = 0;
-      // enable cycle counter
-      *DWT_CONTROL1 = *DWT_CONTROL1 | 1 ;
-      RED_SetVal();
-      count1 = 0;
-      count1 = count1 +2;
-      count1 = count1 +2;
-      count1 = count1 +2;
-      count1 = count1 +2;
-      RED_ClrVal();
-      //read the counts
-      count = *DWT_CYCCNT1;
-      //Actual execution time = count * Time for One System Clock
-
-      count = 0;
-      *DWT_CYCCNT1 = 0;
-      // enable cycle counter
-      *DWT_CONTROL1 = *DWT_CONTROL1 | 1 ;
-      count1 = 0;
-      count1 = count1 +2;
-      count1 = count1 +2;
-      count1 = count1 +2;
-      count1 = count1 +2;
-      RED_SetVal();
-      //read the counts
-      count = *DWT_CYCCNT1;
-      //Actual execution time = count * Time for One System Clock
-    }
+//  while(1)
+//    {
+//      count = 0;
+//      *DWT_CYCCNT1 = 0;
+//      // enable cycle counter
+//      *DWT_CONTROL1 = *DWT_CONTROL1 | 1 ;
+//      RED_SetVal();
+//      count1 = 0;
+//      count1 = count1 +2;
+//      count1 = count1 +2;
+//      count1 = count1 +2;
+//      count1 = count1 +2;
+//      RED_ClrVal();
+//      //read the counts
+//      count = *DWT_CYCCNT1;
+//      //Actual execution time = count * Time for One System Clock
+//
+//      count = 0;
+//      *DWT_CYCCNT1 = 0;
+//      // enable cycle counter
+//      *DWT_CONTROL1 = *DWT_CONTROL1 | 1 ;
+//      count1 = 0;
+//      count1 = count1 +2;
+//      count1 = count1 +2;
+//      count1 = count1 +2;
+//      count1 = count1 +2;
+//      RED_SetVal();
+//      //read the counts
+//      count = *DWT_CYCCNT1;
+//      //Actual execution time = count * Time for One System Clock
+//    }
 
   while(1);
 
